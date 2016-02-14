@@ -54,13 +54,9 @@ class ViewController: UIViewController {
         
        playSound()
         
-        //if runningNumber.characters.count < 8 {
-            
             runningNumber += "\(button.tag)"
         
             outputLabel.text = runningNumber
-        
-        //}
         
     }
 
@@ -125,7 +121,7 @@ class ViewController: UIViewController {
                     
                 }
                 
-             
+                leftValStr = result
                 outputLabel.text = result
             }
             
@@ -156,7 +152,7 @@ class ViewController: UIViewController {
     }
     
     
-    /*@IBAction func clearPressed(sender: AnyObject) {
+   @IBAction func clearPressed(sender: AnyObject) {
         
         playSound()
          runningNumber = ""
@@ -166,7 +162,7 @@ class ViewController: UIViewController {
          result = ""
         outputLabel.text = result
         
-    }*/
-
+    }
+    
 }
 
